@@ -1,11 +1,11 @@
-// Problem 5: The Private Inventory
-class Item {
-    #discount = 0.1; 
-    constructor(name, price) {
-        this.name = name;
-        this.price = price;
-    }
-    get finalPrice() {
-        return this.price - (this.price * this.#discount);
+// Problem 6: Robust Division
+function safeDivide(a, b) {
+    try {
+        if (b === 0) throw new Error("Cannot divide by zero");
+        return a / b;
+    } catch (error) {
+        return error.message;
+    } finally {
+        console.log("Operation attempted");
     }
 }
