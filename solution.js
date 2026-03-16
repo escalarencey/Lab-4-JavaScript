@@ -19,3 +19,4 @@ const leaderboard = [
 
 console.log(getTopScorers(leaderboard)); 
 // Output: "Alice, Charlie, Eve, Grace, Ivy"
+
