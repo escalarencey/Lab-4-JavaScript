@@ -1,13 +1,3 @@
-// Problem 2: Secure ID Generator
-function generateIDs(count) {
-    let ids = [];
-    for (let i = 0; i < count; i++) {
-        if (i === 5) continue;
-        ids.push(`ID-${i}`);
-    }
-    return ids;
-}
-
 // Problem 3: The Functional Sum
 function calculateTotal(...numbers) {
     return numbers.reduce((acc, curr) => {
