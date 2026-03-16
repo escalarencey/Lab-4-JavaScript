@@ -1,9 +1,7 @@
-// Problem 2: Secure ID Generator
-function generateIDs(count) {
-    let ids = [];
-    for (let i = 0; i < count; i++) {
-        if (i === 5) continue;
-        ids.push(`ID-${i}`);
-    }
-    return ids;
+// Problem 4: Leaderboard Filter
+function getTopScorers(playerList) {
+    return playerList
+        .filter(player => player.score > 8)
+        .map(player => player.name)
+        .join(", ");
 }
